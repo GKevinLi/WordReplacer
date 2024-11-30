@@ -29,4 +29,4 @@ Default word replacements:
 # Usage:
 
 Download all files from this repository as a zip file and go to Chrome Extension Manager (click the Extensions button in the upper right hand corner, Manage Extensions is at the bottom of the pop up). 
-In the extension manager, click Load Unpacked, unpack the downloaded zip file, and add it as an extension. 
+In the extension manager, click Load Unpacked, unpack the downloaded zip file, and add it as an extension. Click on the extension's icon to change the word replacements.
