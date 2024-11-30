@@ -1,0 +1,19 @@
+{
+    "name": "xkcd word replacement thingy",
+    "description": "because why not",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [{
+      
+      "js": ["replacement.js"],
+      "matches": ["http://*/*", "https://*/*"]
+     }],
+    
+    "permissions": ["scripting", "activeTab", "storage", "tabs", "background"],
+    "host_permissions": ["http://*/*","https://*/*"],
+    "action": {
+      "default_popup": "test.html",
+      "default_icon": "shut.png"
+    }
+    
+  }

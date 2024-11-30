@@ -1,0 +1,102 @@
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    background : #bfbfbf; 
+    --len: '----';
+}
+
+
+html
+{
+    width: 350px;  /* max: 800px */
+    height: 100px; /* max: 600px */
+}
+p {
+    font-size: 24;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+span {
+    padding : 10px;
+    background : #2d2f31; 
+    color : white;
+    font-size : 1.5em;
+    font-variant : small-caps;
+    border: 2px solid black;
+    cursor : pointer;
+    display: block;
+    content: "+";
+}
+
+#title {
+    font-size: 22;
+    text-align: center;
+    border-bottom: 3px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: Inter, sans-serif;
+}
+#subtitle {
+    font-size: 16;
+    text-align: center;
+    
+    
+    font-family: Inter, sans-serif;
+}
+
+#mybutton {
+    background-color:gainsboro;
+    font-size : 1em;
+    padding-top: 3px;
+    font-variant : normal;
+    border: 2px solid black;
+    font-family: Inter, sans-serif;
+}
+
+#mybutton:hover {
+    
+    background-color:rgb(235, 234, 234);
+}
+#mybutton:active {
+    
+    background-color:rgb(162, 161, 161);
+    transform: translateY(1px);
+}
+
+#word1 {
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    color : black;
+    font-size : 1em;
+    font-variant : normal;
+    font-family: Inter, sans-serif;
+    width: 100px;
+    height: 20px;
+}
+#word2 {
+    padding-top: 5px;
+    padding-left: 10px;
+    text-align: left;
+    color : black;
+    font-size : 1em;
+    font-variant : normal;
+    font-family: Inter, sans-serif;
+    width: 100px;
+    height: 20px;
+}
+
+.slide {
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+  }
+
+
+#touch:checked + .slide {height: var(--len); background-color: #686d72;} 
+#touch:not(:checked) + .slide {height: var(--len * -1); background-color: #686d72;} 
+#touch {position: absolute; opacity: 0; height: 0px;}  
